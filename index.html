@@ -19,42 +19,153 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Jimmy's Portfolio</title>
+
+    <style>
+      body {
+        background-image: url("https://www.shutterstock.com/shutterstock/photos/1893003331/display_1500/stock-photo-impressively-beautiful-fairy-tale-mountain-lake-in-austrian-alps-colorful-scenery-panoramic-view-1893003331.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin-top: 0;
+      }
+    </style>
+    <style>
+      .listedcol {
+        width: 100%;
+        columns: 3;
+      }
+    </style>
   </head>
 
-  <!-- body content is what is displayed in browser -->
   <body>
     <!-- Placeholder for navigation that is in navbar.html-->
     <div id="nav-placeholder"></div>
-
-    <!--<div class="alert alert-info" role="alert">
-      You can update the navbar.html file with a different navigation menu. For
-      bootstrap code for different navbars go to
-      <a
-        href="https://getbootstrap.com/docs/5.3/components/navbar/"
-        target="_blank">Visit Bootstrap navbar</a>. Delete this part when you are done.
-    </div>
-
-    <!-- Content of webpage -->
-    <!--<div class="container bg-primary-subtle text-primary-emphasis p-3">
-      <p>
-        Read the project iteration 01 requirements.
-      </p>
-    </div>-->
 
     <!--  script code to add navbar -->
     <script>
       // Load the navigation menu into the placeholder
       $("#nav-placeholder").load("navbar.html");
     </script>
-    
-    <div "container text-color: white">
-      <h1>
-        Motivated
-      </h1>
-    <div class="container-fluid mt-100% mb-50% opacity-50 ">
-      <img src="https://www.shutterstock.com/shutterstock/photos/1893003331/display_1500/stock-photo-impressively-beautiful-fairy-tale-mountain-lake-in-austrian-alps-colorful-scenery-panoramic-view-1893003331.jpg"alt=”mountains”style=width: 100%;”>
+
+    <div class="container mt-5">
+      <div class="d-flex flex-wrap" style="gap: 30px">
+        <!-- Main Card stays on the left -->
+        <div class="main" style="flex: 0 0 45%; max-width: 45%">
+          <div class="card" style="width: 100%">
+            <img
+              class="card-img-top"
+              src="https://media.istockphoto.com/id/1359382329/photo/a-chihuahua-dog-in-a-tuxedo-at-a-wedding.jpg?s=2048x2048&w=is&k=20&c=C1fxxwDrrS1_SzFShpFOqYKTRp4OP8gh0hZlLz8pVmA="
+              alt="placeholderimage"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h4 class="card-title">name</h4>
+              <p class="card-text">
+                Motivated veteran with experience in tactical communications and
+                small team leadership. Undergraduate Cybersecurity Student at
+                Metropolitan State University of Denver.
+              </p>
+              <p>
+                From 2019-2023, I served in the United States Marine Corps as
+                Transmissions Systems Operator and ended my contract as a
+                Corporal. I was exposed to many sophisticated systems and
+                methods for transmission and this interest has encouraged me to
+                continue growing my knowledge for how the world communicates.
+              </p>
+              <p>
+                My future goals consist of a career in technology while
+                continuing to further my knowledge in networking,
+                telecommunications, and cybersecurity. With continuing concern
+                over our data and equipment gets used, I wish to be an asset for
+                preventing any future attempts to compromise a system.
+              </p>
+              <a href="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Jaime%20Torres%20Resume%20.pdf?v=1742181777648" class="btn btn-light">PDF Resume Download ></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        
+
+        <!-- Container for School and Major & Skills -->
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 30px">
+          <!-- School and Major Container -->
+          <div class="school-and-major">
+            <div class="card" style="width: 75%">
+              <div class="card-body">
+                <h4 class="card-title">School and Major</h4>
+                <p class="card-text">
+                  Student at MSU Denver pursuing Bachelor's in Cybersecurity.
+                  Curriculum includes basic networking courses and programming
+                  in Python and HTML. Additional courses taken for Business,
+                  Telecommunications, and MIS.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Container -->
+          <div class="Skills">
+            <div class="card" style="width: 75%">
+              <div class="card-body">
+                <h3 class="card-title">Skills</h3>
+                <h6>Technical Skills</h6>
+                <div class="listedcol">
+                  <ul>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>Oracle (GCSS)</li>
+                    <li>Transmissions Network Implementation</li>
+                    <li>L3Harris Falcon Systems</li>
+                    <li>Logistical Supply Support</li>
+                    <li>Records Management</li>
+                    <li>Equipment Maintenance</li>
+                  </ul>
+                </div>
+                <h6>Soft Skills</h6>
+                <div class="listedcol">
+                  <ul>
+                    <li>Adaptable</li>
+                    <li>Communicator</li>
+                    <li>Problem Solver</li>
+                    <li>Multitasker</li>
+                    <li>Customer Service</li>
+                    <li>Attentive</li>
+                    <li>Analytical</li>
+                    <li>Collaborative</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                style="
+                  flex: 1;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 30px;
+                "
+              >
+                <div class="things I enjoy"></div>
+                <div class="card" style="width: 75%">
+                  <div class="card-body">
+                    <h4>Things I Enjoy</h4>
+                    <p>
+                      I enjoy spending free time with friends and family when
+                      possible. When I am not spending time with others, I enjoy
+                      drawing and painting as I believe it's an important way to
+                      'refresh' the mind. With this, I take an interest in
+                      photography and occasionally use my references for my own
+                      art. With my interests in computers, I believe it's
+                      important to have a wide range of different personal
+                      interests to keep a balanced mind.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-      
   </body>
 </html>
