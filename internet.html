@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -18,22 +18,230 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Website Template</title>
+    <title>Internet and Concepts Overview</title>
+    
+    <style>
+    body {
+        background-image: url("https://www.shutterstock.com/shutterstock/photos/1893003331/display_1500/stock-photo-impressively-beautiful-fairy-tale-mountain-lake-in-austrian-alps-colorful-scenery-panoramic-view-1893003331.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+      }
+
+    </style>
   </head>
 
   <!-- body content is what is displayed in browser -->
-  <body>
-    <!-- Placeholder for navigation that is in navbar.html-->
-    <div id="nav-placeholder"></div>
-    
-    <h1>
-      Internet Information
-    </h1>
+<body>
+  <!-- Placeholder for navigation that is in navbar.html-->
+  <div id="nav-placeholder"></div>
 
-    <!--  script code to add navbar -->
-    <script>
-      // Load the navigation menu into the placeholder
-      $("#nav-placeholder").load("navbar.html");
-    </script>
-  </body>
+  <!--  script code to add navbar -->
+  <script>
+    // Load the navigation menu into the placeholder
+    $("#nav-placeholder").load("navbar.html");
+  </script>
+
+  <div class="container">
+    <div>
+      <div class="main">
+        <div class="card" style="width: 100%">
+          <div class="card-body">
+            <h2 class="card-title">Internet and Concepts Overview</h2>
+            <p class="card-text">
+              The internet is a general term to describe the complex web of connections between
+              our computers today. Beginning as the ARPANET research project between a few
+              universities in the United States, we now have connections that span continents just to exchange
+              information with one another. With a complex network to work with, standards have been created
+              to ensure all computers can understand each other.
+            </p>
+          
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+  </div>
+<div class="container">
+      <div>
+        <div class="main">
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h3>Encoding, Binary, and ASCII</h3>
+            <p>
+              Encoding is the translation of how we communicate into how computers 
+              communicate. Computers send and receive data using a binary system that has
+              "on" and "off" values. The values that a computer can use to understand this 
+              is through 1's and 0's. For each of these values, this is one "bit".
+            </p>
+            <p>
+              Using logical systems of the powers of 2, a computer can "add up" 1's and 0's
+              to reflect a value that can't be immediately understood with standard languages
+              that humans use.
+            </p>
+            <p>
+              Starting from the right (from a human standpoint), 2^0 has a bit value of either 1 or 0. Continuing in a 
+              'left-wards' direction, the power-value increases by one for every bit that is 
+              needed to present a specific piece of information. The value of “5” is displayed as “0101”.
+            </p>
+            <!-- Insert Excel image here -->
+            <p>
+              With larger pieces of data, bits become bytes. 8 bits become a byte with a maximum numerical value 
+              of 255. Larger values require more bits and bytes.
+            </p>
+            <p>
+              Binary translates into base 10 values (standard counting) thanks to the totals derived from the powers
+              of 2. This in turn can be used to reflect the characters used in the ASCII chart. 
+            </p>
+            <!-- Insert ASCII image here -->
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <div class="main">
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h2 class="card-title">How data Travels on the Internet</h2>
+              <p class="card-text">
+                <h4>Networks</h4>
+                <p>
+                  A network is the physical and logical topology of connected devices.
+                  In short, two devices that are connected via cable or wirelessly, and
+                  transmit/receive data to each other is a network. The internet is a conglomerate of
+                  networks around the world and the vastness of it is why it might also be
+                  called, the 'web'.
+                </p>
+                <h4>Protocols</h4>
+                <p>
+                  protocol info
+                </p>
+              <h4>physical connections</h4>
+                <p>
+                  types of connections info
+                </p>
+              <h4>Packet Switching</h4>
+                <p>
+                  Packet switching info
+              </p>
+              <h4>routing</h4>
+                <p>
+                  routing info
+                </p>
+              <h4>Packet Switching</h4>
+                <p>
+                  Packet switching info
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  <div class="container">
+      <div>
+        <div class="main">
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h3>Encryption</h3>
+              <p>
+                Data with no encryption is plaintext data. This data can be read by anyone who sees it.
+                Encryption is the “scrambling” or ciphering of data before transmission. In short, the 
+                data in a message goes through a calculated process (or algorithm) of turning the information 
+                to be sent into an unreadable format. The purpose of this is to protect the information that 
+                is being sent from being deciphered by an unauthorized third-party or a bad actor who may 
+                capture that information. Decryption is the process of deciphering an encrypted message 
+                using a key or set of steps in order to turn the unreadable content into comprehendible 
+                information (plaintext to the recipient). In a perfect scenario, the intended recipient is 
+                the only holder of the key.
+              </p>
+              <h5>Symmetric Encryption</h5>
+              <p>
+                Symmetric encryption implies that the encryption and decryption method is using the same 
+                key or steps to secure messages. The sender and the receiver would be using the same key. 
+              </p>
+              <h5>Asymmetric Encryption</h5>
+              <p>
+                Asymmetric encryption implies that the sender uses a public key to encrypt a transmission. 
+                The recipient uses a private key (different than the sender’s key) to decrypt the transmission 
+                that was sent. The sender’s key being different prevents them from decrypting the key that they 
+                sent. With the recipient being the only client that can decrypt the transmission, this makes it 
+                very difficult for anyone else to decipher the encryption. 
+              </p>
+              <h5>The Importance of Encryption</h5>
+              <p>
+                Compared to the internet that was derived from the ARPANET decades ago, the internet is now used to fulfill 
+                services that use personally identifiable information or financial information of millions, if not, 
+                billions of people around the world. With all of the exchange of this information, bad actors, hackers, 
+                and so on, want to access this information for illicit reasons. In order to prevent this, 
+                security measures need to be taken in how this traffic is sent across the web. 
+                Encrypting the information being sent to other devices is a measure that helps ensure that not 
+                anyone can intercept confidential information and make use of it in any meaningful way. This would 
+                be similar to intercepting an envelope from the mail to an important person but not being able to 
+                make sense of the message because it’s literally unreadable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  <div class="container">
+      <div>
+        <div class="main">
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h3>Encryption</h3>
+              <p>
+                Data with no encryption is plaintext data. This data can be read by anyone who sees it.
+                Encryption is the “scrambling” or ciphering of data before transmission. In short, the 
+                data in a message goes through a calculated process (or algorithm) of turning the information 
+                to be sent into an unreadable format. The purpose of this is to protect the information that 
+                is being sent from being deciphered by an unauthorized third-party or a bad actor who may 
+                capture that information. Decryption is the process of deciphering an encrypted message 
+                using a key or set of steps in order to turn the unreadable content into comprehendible 
+                information (plaintext to the recipient). In a perfect scenario, the intended recipient is 
+                the only holder of the key.
+              </p>
+              <h5>Symmetric Encryption</h5>
+              <p>
+                Symmetric encryption implies that the encryption and decryption method is using the same 
+                key or steps to secure messages. The sender and the receiver would be using the same key. 
+              </p>
+              <h5>Asymmetric Encryption</h5>
+              <p>
+                Asymmetric encryption implies that the sender uses a public key to encrypt a transmission. 
+                The recipient uses a private key (different than the sender’s key) to decrypt the transmission 
+                that was sent. The sender’s key being different prevents them from decrypting the key that they 
+                sent. With the recipient being the only client that can decrypt the transmission, this makes it 
+                very difficult for anyone else to decipher the encryption. 
+              </p>
+              <h5>The Importance of Encryption</h5>
+              <p>
+                Compared to the internet that was derived from the ARPANET decades ago, the internet is now used to fulfill 
+                services that use personally identifiable information or financial information of millions, if not, 
+                billions of people around the world. With all of the exchange of this information, bad actors, hackers, 
+                and so on, want to access this information for illicit reasons. In order to prevent this, 
+                security measures need to be taken in how this traffic is sent across the web. 
+                Encrypting the information being sent to other devices is a measure that helps ensure that not 
+                anyone can intercept confidential information and make use of it in any meaningful way. This would 
+                be similar to intercepting an envelope from the mail to an important person but not being able to 
+                make sense of the message because it’s literally unreadable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+
+</body>
 </html>
+
