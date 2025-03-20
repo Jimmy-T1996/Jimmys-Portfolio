@@ -71,7 +71,7 @@
             <div class="card-body">
               <h3>Encoding, Binary, and ASCII</h3>
             <p>
-              Encoding is the translation of how we communicate into how computers 
+              Encoding is the translation of how we communicate, into how computers 
               communicate. Computers send and receive data using a binary system that has
               "on" and "off" values. The values that a computer can use to understand this 
               is through 1's and 0's. For each of these values, this is one "bit".
@@ -79,23 +79,51 @@
             <p>
               Using logical systems of the powers of 2, a computer can "add up" 1's and 0's
               to reflect a value that can't be immediately understood with standard languages
-              that humans use.
+              that humans use. This standard is the foundation for information exchanges in computers.
             </p>
             <p>
               Starting from the right (from a human standpoint), 2^0 has a bit value of either 1 or 0. Continuing in a 
               'left-wards' direction, the power-value increases by one for every bit that is 
               needed to present a specific piece of information. The value of “5” is displayed as “0101”.
             </p>
-            <!-- Insert Excel image here -->
+          <div class="main">
+          <div class="card" style="width: 100%">
+            <img
+              class="card-img"
+              src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Encoding%20snippet.jpg?v=1742494903319"
+              alt="Encoding Example"   
+              style="width: 50%; margin: 0 auto; border: 4px solid black;"
+              
+            />
+          </div>
+          </div>
             <p>
               With larger pieces of data, bits become bytes. 8 bits become a byte with a maximum numerical value 
               of 255. Larger values require more bits and bytes.
             </p>
             <p>
               Binary translates into base 10 values (standard counting) thanks to the totals derived from the powers
-              of 2. This in turn can be used to reflect the characters used in the ASCII chart. 
+              of 2. The numerical values in base 10 can be used to identify the characters listed in the 
+              American Standard Code for Information Exchange. Below is a screenshot of table created by the developers
+              of ascii-code.com. Notice that on the far left, a different base 10 value reflects another character in the English
+              Alphabet.
             </p>
-            <!-- Insert ASCII image here -->
+             <div class="main">
+          <div class="card" style="width: 100%">
+            <img
+              class="card-img"
+              src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/ASCII%20chart.jpg?v=1742495894856"
+              alt="ASCII Chart of the alphabet"   
+              style="width: 50%; margin: 0 auto; border: 4px solid black;"
+              
+            />
+          </div>
+          </div>
+              <p>
+                This example demonstrates how information starts of as only two values ("on" or "off") and then builds on itself into other
+                information. With networks, the packets that are sent to different computers contain information that "plugs in" to the other
+                device's software using protocols(logical) and ports(physical).
+              </p>
             </div>
           </div>
         </div>
@@ -120,19 +148,42 @@
                 </p>
                 <h4>Protocols</h4>
                 <p>
-                  protocol info
+                  Protocols are rules for how data behaves on a computer when it is sent and delivered. With an endless amount of configurations for 
+                  computers(physical and logical), protocols are used to standardize how the data between the computers is exchanged. An example of this
+                  is HTTPS (which this website uses). HTTP stands for Hypertext Transfer Protocol and is used as the standard for browsing the internet. 
+                  Web page requests are made with a users sending a request via HTTP to the end devices that has the information requested. A response
+                  is then sent to the original sending device with the requested data. The user is then presented with the website (like you seeing this website).
+                  The 'S' in HTTPS is a newer standard from the original HTTP protocol and stands for "Secure". This was created to move away from plaintext 
+                  communication over the web as cybersecurity is becoming more prevelant with the amount of cybercrime that exists today.
                 </p>
-              <h4>physical connections</h4>
+              <p>
+                There are many protocols that exist for different purposes such as File Transfer Protocol (FTP), Transfer Control Protocol/Internet Protocol (TCP/IP), 
+                Domain Name Service (DNS), and so on. This ensures that regardless of OS and computer, there is a standard being followed between computers interacting
+                on the internet.
+              </p>
+              <h4>Physical Connections</h4>
                 <p>
-                  types of connections info
+                 The connections that connect computers include, copper cable(such as twisted-pair cable), fiber-optic cable(glass strand cable), and even wireless communications
+                  (radio frequency). In general, all connections are referred as a medium. Any computer on a network needs a medium to communicate with others and a carrier/Internet
+                  Service Provider (ISP) manages the traffic that flows through their infrastructure. This flow control is essential in ensuring that the network(s) are efficiently 
+                  implemented.
                 </p>
               <h4>Packet Switching</h4>
                 <p>
-                  Packet switching info
+                  Packet switching is the breakdown of larger pieces of data, which is then sent in pieces (packets) over the network to be reassembled on the receiving end. 
+                  This is possible with the Open Systems Interconnections (OSI) model. Starting at the Application layer (Layer 7), data is broken down through the different layers
+                  until it is sent out via the Physical layer (Layer 1). The receiving computer processes the information in reverse (starting at Layer 1/Physical layer) and is then
+                  processed through the different layers until it reaches the Apllication layer (layer 7).
               </p>
+              <p>
+                In a network, the packets sent and received have source, destination, and sequence (order of packet) to compile the information into a usable format. Larger pieces
+                of data, require more packets. This is derived from the ARPANET project before it became the internet.
+              </p> 
               <h4>routing</h4>
                 <p>
-                  routing info
+                  Routing involves the communication of different networks through routers. All networks require a gateway IP address as this the identifier for how a user receives information
+                  on a global topology, and this is on the router being used on an individual's network. A person on a LAN at home, sends traffic out of their computeer, which is then passed through their router. 
+                  This is what connects them to the web. The internet 
                 </p>
               <h4>Packet Switching</h4>
                 <p>
