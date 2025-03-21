@@ -18,7 +18,7 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Jimmy's Portfolio</title>
+    <title>Internet Overview</title>
 
     <style>
       /*The body style is in every html file to maintain background image*/
@@ -33,111 +33,11 @@
         font-family: Verdana, sans-serif;
         margin: 0;
       }
-
+      /* indent/tab space for paragraphs */
       p {
-        text-indent: 50px
+        text-indent: 40px
       }
 
-      /*Everything below this line is the Slideshow on the Homepage ----------------------------------------------------------------------------------------*/
-      * {
-        box-sizing: border-box;
-      }
-
-      .mySlides {
-        display: none;
-      }
-      img {
-        vertical-align: middle;
-      }
-
-      /* Slideshow container */
-      .slideshow-container {
-        max-width: 75%;
-        position: relative;
-        margin: auto;
-      }
-
-      /* Next & previous buttons */
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
-
-      /* Position the "next button" to the right */
-      .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-
-      /* On hover, add a black background color with a little bit see-through */
-      .prev:hover,
-      .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-
-      /* Caption text */
-      .text {
-        color: #ffffff;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-      }
-
-      /* Number text (1/3 etc) */
-      .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-      }
-
-      /* The dots/bullets/indicators */
-      .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-
-      .active,
-      .dot:hover {
-        background-color: #717171;
-      }
-
-      /* Fading animation — DO NOT CHANGE FADE1 NAME, default name does not work with other attributes. */
-      .fade1 {
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-
-      @keyframes fade {
-        from {
-          opacity: 0.4;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      /*END OF SLIDESHOW STYLES---------------------------------------------------------------------------------------------------------------------- */
 
       /* Keep current attributes for Responsive Web Design on phones */
       @media only screen and (max-width: 300px) {
@@ -159,13 +59,6 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 1em;
-      }
-      /* Current caption box for SlideShow */
-      .caption-container {
-        display: flex;
-        justify-content: center;
-        background: black;
-      }
     </style>
   </head>
 
@@ -215,25 +108,27 @@
                 each of these values, this is one "bit".
               </p>
               <p>
-                Using logical systems of the powers of 2, a computer can "add
+                Using a logical system of the powers of 2 for every bit, a computer can "add
                 up" 1's and 0's to reflect a value that can't be immediately
-                understood with standard languages that humans use. This
+                understood with standard human language. This
                 standard is the foundation for information exchanges in
                 computers.
               </p>
               <p>
                 Starting from the right (from a human standpoint), 2^0 has a bit
-                value of either 1 or 0. Continuing in a 'left-wards' direction,
-                the power-value increases by one for every bit that is needed to
-                present a specific piece of information. The value of “5” is
-                displayed as “0101”.
+                value of either 1 or 0 (represents "on" or "off"). Continuing in a 'left-wards' direction,
+                the power-value of 2 increases by one number. So this means the more left we go, we will see
+                2^1 which is 2, and then 2^2 which is 4, and so on. For every bit that is needed to
+                present a specific piece of information, the total 'base 10' number is derived from the "on" bits (1s) and gives us
+                a regular number. The value of “5” is displayed as “00000101”. The below table shows how this 
+                adds up to a base 10 value of 5.
               </p>
               <div class="main">
                 <div class="card" style="width: 100%">
                   <img
                     class="card-img"
                     src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Encoding%20snippet.jpg?v=1742494903319"
-                    alt="Encoding Example"
+                    alt="Encoding Example of how bits are presented"
                     style="width: 50%; margin: 0 auto; border: 4px solid black"
                   />
                 </div>
@@ -241,14 +136,26 @@
               <p>
                 With larger pieces of data, bits become bytes. 8 bits become a
                 byte with a maximum numerical value of 255. Larger values
-                require more bits and bytes.
+                require more bits and bytes. When looking into networking concepts,
+                you will learn the an 32-bit IPV4 address such as 255.255.255.255,
+                follows this concept exactly. With every period to seperate 8 bits
+                of information, you have the possibility of assigning a number to 
+                represent a computer's address. Ther are over 4,294,967,296 possible
+                addresses in this application of binary.
               </p>
               <p>
                 Binary translates into base 10 values (standard counting) thanks
                 to the totals derived from the powers of 2. The numerical values
                 in base 10 can be used to identify the characters listed in the
-                American Standard Code for Information Exchange. Below is a
-                screenshot of table created by the developers of ascii-code.com.
+                American Standard Code for Information Exchange (ASCII).  In total, there are 255 
+                characters on this table. Any character on this table can be written in binary with just
+                8 bits/1 byte.
+              </p>
+              <p>
+                Below is a
+                screenshot of table created by the developers of ascii-code.com. You
+                can vist their website <a href="https://www.ascii-code.com/">here</a>
+                and investigate this topic more in-depth.
                 Notice that on the far left, a different base 10 value reflects
                 another character in the English Alphabet.
               </p>
@@ -263,12 +170,12 @@
                 </div>
               </div>
               <p>
-                This example demonstrates how information starts of as only two
-                values ("on" or "off") and then builds on itself into other
+                This example demonstrates how information that starts off as only two
+                values (1 or 0 / "on" or "off") and then builds on itself into other
                 information. With networks, the packets that are sent to
                 different computers contain information that "plugs in" to the
                 other device's software using protocols(logical) and
-                ports(physical).
+                ports(physical). In the bigger picture, it all comes together.
               </p>
             </div>
           </div>
@@ -295,14 +202,14 @@
               <h4>Physical Connections</h4>
               <p>
                 The connections that connect computers include, copper
-                cable(such as twisted-pair cable), fiber-optic cable(glass
-                strand cable), and even wireless communications (radio
-                frequency). In general, all connections are referred as a
-                medium. Any computer on a network needs a medium to communicate
+                cable(such as twisted-pair copper cable / electrical pulses), fiber-optic cable(glass
+                strand cable / light pulses), and even wireless communications (radio
+                frequency). In general, all connections are referred to as a
+                'medium'. Any computer on a network needs a medium to communicate
                 with others and a carrier/Internet Service Provider (ISP)
-                manages the traffic that flows through their infrastructure.
-                This flow control is essential in ensuring that the network(s)
-                are efficiently implemented.
+                manages the traffic that flows through their infrastructure (physical
+                topology). This flow control is essential in ensuring that the network(s)
+                are efficiently implemented on geographic scale.
               </p>
             </div>
           </div>
@@ -327,13 +234,13 @@
             response is then sent to the original sending device with the
             requested data. The user is then presented with the website (like
             you seeing this website). The 'S' in HTTPS is a newer standard from
-            the original HTTP protocol and stands for "Secure". This was created
+            the original Hyper Text Transfer Protocol and stands for "Secure". This was created
             to move away from plaintext communication over the web as
             cybersecurity is becoming more prevelant with the amount of
-            cybercrime that exists today.
+            threats that exists today.
           </p>
           <p>
-            There are many protocols that exist for different purposes such as
+            There are many protocols that exist for for the different OSI layers such as
             File Transfer Protocol (FTP), Transfer Control Protocol/Internet
             Protocol (TCP/IP), Domain Name Service (DNS), and so on. This
             ensures that regardless of OS and computer, there is a standard
@@ -348,16 +255,17 @@
             Interconnections (OSI) model. Starting at the Application layer
             (Layer 7), data is broken down through the different layers until it
             is sent out via the Physical layer (Layer 1). The receiving computer
-            processes the information in reverse (starting at Layer 1/Physical
+            processes the information in reverse order (starting at Layer 1/Physical
             layer) and is then processed through the different layers until it
-            reaches the Apllication layer (layer 7).
+            reaches the Application layer (layer 7). The end-result is a successful
+            data exchange.
           </p>
           <p>
             In a network, the packets sent and received have source,
-            destination, and sequence (order of packet) to compile the
-            information into a usable format. Larger pieces of data, require
-            more packets. This is derived from the ARPANET project before it
-            became the internet.
+            destination, and sequence order (order of packet) to compile the
+            information into a usable format when received. Larger pieces of data, require
+            more packets. This is derived from the ARPANET project in 1969 before it
+            became the internet 14 years later (1983).
           </p>
           <h4>Routing</h4>
           <p>
@@ -376,7 +284,13 @@
           </p>
           <p>
             Below is a diagram that gives a visual of how sending a file might
-            look on a topology.
+            look on a topology. A user sends a file over the internet to a user across the globe.
+            The packet must be broken into 2 segments before sending them over the medium. The
+            packets (or PDUs in diagram) are sent out to ping different routers in an effort to
+            find the most efficient path to the destination. Notice that the packets did not
+            take the shortest path. By the time the segments are received, they are compiled again 
+            based on their sequence order and the whole file is now usable for the recipient. This
+            is an example of packet-switching.
           </p>
           <div class="card" style="width: 100%">
             <img
@@ -391,7 +305,7 @@
             internet works and how routing is implemented through this
             <a
               href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work"
-              >Link</a
+              >link.</a
             >
           </p>
         </div>
