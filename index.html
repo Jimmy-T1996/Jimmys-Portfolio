@@ -21,6 +21,7 @@
     <title>Jimmy's Portfolio</title>
 
     <style>
+      /*The body style is in every html file to maintain background image*/
       body {
         background-image: url("https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/mountains1transp.png?v=1742460753978");
         background-size: cover;
@@ -29,15 +30,19 @@
         height: 100%;
         width: 100%;
         margin-top: 0;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-      body {
         font-family: Verdana, sans-serif;
         margin: 0;
       }
+
+      p {
+        text-indent: 50px
+      }
+
+      /*Everything below this line is the Slideshow on the Homepage ----------------------------------------------------------------------------------------*/
+      * {
+        box-sizing: border-box;
+      }
+
       .mySlides {
         display: none;
       }
@@ -118,7 +123,7 @@
         background-color: #717171;
       }
 
-      /* Fading animation */
+      /* Fading animation — DO NOT CHANGE FADE1 NAME, default name does not work with other attributes. */
       .fade1 {
         animation-name: fade;
         animation-duration: 1.5s;
@@ -132,8 +137,9 @@
           opacity: 1;
         }
       }
+      /*END OF SLIDESHOW STYLES---------------------------------------------------------------------------------------------------------------------- */
 
-      /* On smaller screens, decrease text size */
+      /* Keep current attributes for Responsive Web Design on phones */
       @media only screen and (max-width: 300px) {
         .prev,
         .next,
@@ -141,12 +147,12 @@
           font-size: 11px;
         }
       }
-
+      /* Class for columns used in "skills" */
       .listedcol {
         width: 100%;
         columns: 2;
       }
-
+      /*Current attributes center all containers */
       .container {
         display: flex;
         flex-direction: column;
@@ -154,6 +160,7 @@
         flex-wrap: wrap;
         gap: 1em;
       }
+      /* Current caption box for SlideShow */
       .caption-container {
         display: flex;
         justify-content: center;
@@ -174,18 +181,20 @@
 
     <div class="container">
       <div>
-        <!-- Main Card stays on the left -->
+        <!-- Profile Picture and Bio -->
         <div class="main">
           <div class="card" style="width: 100%">
             <img
-              class="card-img-top"
+              class="card-img-top mt-4"
               src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Pimg.jpg?v=1742458781809"
-              alt="Jimmy Picture"   
-              style="width: 50%; margin: 0 auto; border: 4px solid black;"
-              
+              alt="Jimmy Picture"
+              style="width: 50%; margin: 0 auto; border: 4px solid black"
             />
+            <!-- Bio text -->
             <div class="card-body">
-              <h2 class="card-title" style="text-align: center">Jimmy Torres</h2>
+              <h2 class="card-title" style="text-align: center">
+                Jimmy Torres
+              </h2>
               <p class="card-text">
                 Motivated veteran with experience in tactical communications and
                 small team leadership. Undergraduate Cybersecurity Student at
@@ -196,45 +205,56 @@
                 Transmissions Systems Operator and ended my contract as a
                 Corporal. I was exposed to many sophisticated systems and
                 methods for transmission and this interest has encouraged me to
-                continue growing my knowledge for how the world communicates.
-                My in-garrison work was to lead and manage our maintenance program for our
-                assets for our platoon to guarantee the readiness of our communications
-                equipment.
+                continue growing my knowledge for how the world communicates. My
+                in-garrison work was to lead and manage our maintenance program
+                for our Communications platoon. My duties pertained to handling,
+                documenting, and processing all data of our assets and guarantee
+                the readiness of our communications equipment.
               </p>
               <p>
                 My future goals consist of a career in technology while
                 continuing to further my knowledge in networking,
-                telecommunications, and cybersecurity. With continuing concern
-                over our data and equipment gets used, I wish to be an asset for
-                preventing any future attempts to compromise a system.
+                telecommunications, and cybersecurity. With the continuing
+                concern over how our data and equipment gets used, I wish to be
+                an asset for preventing any future attempts to compromise a
+                system.
               </p>
-              <a
-                href="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Jaime%20Torres%20Resume%20.pdf?v=1742181777648"
-                class="btn btn-light"
-                >PDF Resume Download ></a
-              >
+              <!-- Resume last updated in Winter 2023 -->
+              <div class="container">
+                <a
+                  href="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Jaime%20Torres%20Resume%20.pdf?v=1742181777648"
+                  class="btn btn-light"
+                  style="width: 50%; margin: 0 auto"
+                  >PDF Resume Download >
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <br />
-
+        <!-- School Container updated March 2025 -->
         <div class="card" style="width: 100%">
           <div class="card-body">
             <h4 class="card-title">School and Major</h4>
             <p class="card-text">
-              Student at MSU Denver pursuing a Bachelor's Degree in 
-              <a href="https://www.msudenver.edu/criminal-justice-criminology/cybersecurity-bs/">Cybersecurity</a>.
-              Curriculum includes basic networking courses and programming in
+              Student at MSU Denver pursuing a Bachelor's Degree in
+              <a
+                href="https://www.msudenver.edu/criminal-justice-criminology/cybersecurity-bs/"
+                >Cybersecurity</a
+              >. Curriculum includes basic networking courses and programming in
               Python and HTML. Additional courses taken for Business,
-              Telecommunications, and MIS. Additional courses taken at the 
-               <a href="https://ccaurora.edu/programs/computer-digital-technologies-department/cyber-security-aas/">Community College of Aurora</a> 
+              Telecommunications, and MIS. Additional courses taken at the
+              <a
+                href="https://ccaurora.edu/programs/computer-digital-technologies-department/cyber-security-aas/"
+                >Community College of Aurora</a
+              >
               for their Cybersecurity Program.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Skills Container -->
+      <!-- Skills Container March 2025-->
       <div class="Skills">
         <div class="card" style="width: 100%">
           <div class="card-body">
@@ -269,6 +289,7 @@
           </div>
         </div>
         <br />
+        <!-- Start of hobbies and interests -->
         <div>
           <div class="card" style="width: 100%">
             <div class="card-body">
@@ -276,9 +297,14 @@
               <p>
                 I enjoy spending free time with friends and family when
                 possible. When I am not spending time with others, I enjoy
-                <a href="https://drive.google.com/drive/folders/12QJLFrMRitJmflosZyBNo_kHdpBYJqsu?usp=drive_link">Drawing and Painting</a>.
-                With this, I take an interest in 
-                <a href="https://drive.google.com/drive/folders/1rGgV-FidEqIc8F2BNzCKQi99jCaEIxEM?usp=sharing">Photography</a>
+                <a
+                  href="https://drive.google.com/drive/folders/12QJLFrMRitJmflosZyBNo_kHdpBYJqsu?usp=drive_link"
+                  >Drawing and Painting</a
+                >. With this, I take an interest in
+                <a
+                  href="https://drive.google.com/drive/folders/1rGgV-FidEqIc8F2BNzCKQi99jCaEIxEM?usp=sharing"
+                  >Photography</a
+                >
                 and occasionally use my references for my own art. With my
                 interests in computers, I believe it's important to have a wide
                 range of different personal interests to keep a balanced mind.
@@ -288,43 +314,47 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
+    <!-- Start of slideshow container -->
     <div>
+      <!-- image one -->
       <div class="slideshow-container">
         <div class="mySlides fade1">
           <div class="numbertext">1 / 3</div>
           <img
             src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/website.jpg?v=1742188234705"
-            style="width: 100%; border: 15px solid black;"
+            style="width: 100%; border: 15px solid black"
             alt="Collage of Drawings"
           />
-          <div class="caption-container">These are a few drawings I've done in the past.</div>
+          <div class="caption-container">
+            These are a few drawings I've done in the past.
+          </div>
         </div>
-
+        <!-- image two -->
         <div class="mySlides fade1">
           <div class="numbertext">2 / 3</div>
           <img
             src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Screenshot%202025-03-19%20194634.jpg?v=1742435262220"
-            style="width: 100%; border: 15px solid black;"
+            style="width: 100%; border: 15px solid black"
             alt="Photo of Military truck on military exercise at night"
           />
           <div class="caption-container">
             I took an interest in photography while in the military.
           </div>
         </div>
-
+        <!-- image three -->
         <div class="mySlides fade1">
           <div class="numbertext">3 / 3</div>
           <img
             src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Screenshot%202025-03-19%20194722.JPG?v=1742439719578"
-            style="width: 100%; border: 15px solid black;"
+            style="width: 100%; border: 15px solid black"
             alt="Jimmy and Military friends"
           />
           <div class="caption-container">
             One of the last photos I took with my friends and coworkers in 2023.
           </div>
         </div>
-
+        <!-- DO NOT EDIT — everything below here is the functions in the slideshow -->
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
       </div>
@@ -369,6 +399,7 @@
         }
       </script>
     </div>
-    <br>
+    <!-- end of Slideshow container -->
+    <br />
   </body>
 </html>
