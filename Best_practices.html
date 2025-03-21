@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Using Bootstrap Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- name of document-->
+    <title>Best Practices</title>
+
+    <style>
+      /*The body style is in every html file to maintain background image*/
+      body {
+        background-image: url("https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/mountains1transp.png?v=1742460753978");
+        background-size: cover;
+        background-position: center;
+        transparent:75%:
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        font-family: Verdana, sans-serif;
+        margin: 0;
+      }
+      /* indent/tab space for paragraphs */
+      p {
+        text-indent: 40px
+      }
+
+      /* Keep current attributes for Responsive Web Design on phones */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px;
+      /* Class for columns used in "skills" */
+      .listedcol {
+        width: 100%;
+        columns: 2;
+      }
+      /*Current attributes center all containers */
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+    </style>
+  </head>
+
+  <!-- body content is what is displayed in browser -->
+  <body>
+    <!-- Placeholder for navigation that is in navbar.html-->
+    <div id="nav-placeholder"></div>
+
+    <!--  script code to add navbar -->
+    <script>
+      // Load the navigation menu into the placeholder
+      $("#nav-placeholder").load("navbar.html");
+    </script>
+    <!-- Best Practices container-->
+    <div class="container">
+      <div>
+        <div class="main">
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h3>Best Practices</h3>
+              <p>
+                Many threats exist in the cyber-space today and more often than
+                not, the areas we overlook may make us victims. The following
+                sections briefly summarize how to safely navigate the web and
+                how to prepare yourself for a potential breach of information.
+              </p>
+              <h5>Passwords</h5>
+              <p>
+                Password safety is a very rudimentary step in the world of
+                computers today. When creating a password, a user who can make a
+                password they can easily remember may not always be the safest.
+                Passwords should be sophisticated and reasonably lengthy. A rule
+                of thumb for passwords is to make them long. The Cybersecurity &
+                Infrastructure Security Agency (CISA) recommends using atleast
+                16 characters for password creation. In addition to using
+                sophisticated and long passwords, CISA recommends using a
+                password manager to keep track and secure this information.
+              </p>
+              <p>
+                CISA.gov published a video for best practices on their
+                <a
+                  href="https://www.cisa.gov/secure-our-world/use-strong-passwords"
+                >
+                  website</a
+                >
+                to guide everyday users with their recommendations on this
+                topic.
+              </p>
+              <h5>Software Updates</h5>
+              <p>
+                Growing up in the 2000s-2010s, I can remember a time when
+                Windows Defender was known for being a mediocre form of
+                protection out-of-the-box for Windows XP users. Thankfully,
+                times have changed and proprietary OS security features now hold
+                their own weight. Security updates are a necessity for staying
+                secure today, even if you use 3rd party security and antivirus
+                software. Keeping your Operating System and software up-to-date
+                is critical for preventing potentially dangerous exploits
+                occurring on your devices. This does not only apply to
+                computers, as cellphones nearly mirror the functions of a
+                computer today, they should also be up to date. While I cannot
+                assume what OS or device you use, ensuring you are using the
+                most recent version of your required software is paramount in
+                today's dynamic world of threats.
+              </p>
+              <h5>Phishing</h5>
+              <p>
+                Phishing is a social engineering method of deceiving a person
+                that the representation of something is the real thing. It's
+                fraud for the digital space. In today's age, phishing is used to
+                obtain credentials, personal information, financial data, and so
+                on. This may come in the form of an email, text, social media,
+                and anywhere where you can be communicated to. The simplest way
+                to avoid being 'phished' is to identify possible hints of any
+                strange nature. Phishing is not restricted to personal use.
+                Phishing occurs in the work space and may compromise a larger
+                network if security procedures are lacking. The below screenshot
+                is an example of a phishing email of the government requesting
+                money with obvious signs of deception.
+              </p>
+              <div class="main">
+                <div class="card" style="width: 100%">
+                  <img
+                    class="card-img"
+                    src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/PhishingExample.png?v=1742538685615"
+                    alt="Phishing Example"
+                    style="width: 50%; margin: 0 auto; border: 4px solid black"
+                  />
+                </div>
+                <p>
+                  The most obvious indicator of this being a phishing attempt is
+                  that this was caught by the Gmail platform as spam and
+                  indicated as such. In a scenario where this email may be real
+                  (false-positive), the indicators of it being a phishing
+                  attempt are still very clear. There's no reason that U.S.
+                  Homeland security would contact someone on a personal email,
+                  from a Gmail account, and as Blind-Courtesy Copy. The name of
+                  the person does not reflect the Gmail sender's email, or the
+                  other Gmail contact at the bottom of the message. The user is
+                  requesting money via Western Union or Money Gram, and is
+                  stating that the current president is Joe Biden, when that is
+                  not the case at the time of receiving this email. The entire
+                  email is in caps and is not formatted appropriately to believe
+                  that this is a real government email.
+                </p>
+                <p>
+                  This email does not have any links to open, which is also a
+                  method to lure users into either giving up credentials on a
+                  fake website, or accessing a website with malicious software
+                  embedded. While people may get deceived by more intricately
+                  made emails, it is important to scan an email before
+                  interacting with it, and prevent one's self from becoming a
+                  victim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    <!-- End of Best practices Container -->
+    <!-- Below this line is the Antivirus and Firewall container -->
+    <div class="container">
+      <div>
+        <div class="main">
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h3>Antivirus Software</h3>
+              <p>
+                Antivirus Software is an essential form of software, especially
+                for users who have reason to browse a lot on the web, or have a
+                lot of crucial information to keep secure on their device.
+                Antivirus software is especially useful for preventing
+                potentially malicious software from being accessed, but it is
+                even more useful when an infection has compromised your system.
+                This safeguard is comparable to getting a vaccine, but for your
+                devices. There are plenty of reputable Antivirus companies that
+                exist who make great products. I recommend doing the research to
+                establish your needs and be informed to make that small
+                investment.
+              </p>
+              <h4>Firewalls</h4>
+              <p>
+                Firewalls in short, prevent certain traffic from the web to
+                access your system. With all types of data containing many
+                identifiers and port numbers, you can set up a firewall with
+                either the features that come with your OS (such as Windows) or
+                with software you can obtain such as an antivirus or
+                firewall-specific software. This software-firewall is the most
+                convenient form of firewall to most users at home. Enterprise
+                networks and confidential systems may use a physical-firewall
+                that can prevent more traffic or even perform more sophisticated
+                tasks beyond the scope of this section. In a nutshell, your
+                firewall will act as a filter and reject potentially unwanted
+                traffic, it is recommended that you becomes familiar with
+                setting up a firewall and understand its capabilities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
