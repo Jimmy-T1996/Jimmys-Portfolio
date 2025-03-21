@@ -22,7 +22,7 @@
     
     <style>
     body {
-        background-image: url("https://www.shutterstock.com/shutterstock/photos/1893003331/display_1500/stock-photo-impressively-beautiful-fairy-tale-mountain-lake-in-austrian-alps-colorful-scenery-panoramic-view-1893003331.jpg");
+        background-image: url("https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/mountains1transp.png?v=1742460753978");
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -146,7 +146,28 @@
                   networks around the world and the vastness of it is why it might also be
                   called, the 'web'.
                 </p>
-                <h4>Protocols</h4>
+               <h4>Physical Connections</h4>
+                <p>
+                 The connections that connect computers include, copper cable(such as twisted-pair cable), fiber-optic cable(glass strand cable), and even wireless communications
+                  (radio frequency). In general, all connections are referred as a medium. Any computer on a network needs a medium to communicate with others and a carrier/Internet
+                  Service Provider (ISP) manages the traffic that flows through their infrastructure. This flow control is essential in ensuring that the network(s) are efficiently 
+                  implemented.
+                </p>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  <div class="container">
+    <div class="card" style="width:100%>">
+      <div class="card-body">
+        <h2 class="card-title">
+          Logical Aspect of the Internet
+        </h2>
+        <h4>Protocols</h4>
                 <p>
                   Protocols are rules for how data behaves on a computer when it is sent and delivered. With an endless amount of configurations for 
                   computers(physical and logical), protocols are used to standardize how the data between the computers is exchanged. An example of this
@@ -161,13 +182,7 @@
                 Domain Name Service (DNS), and so on. This ensures that regardless of OS and computer, there is a standard being followed between computers interacting
                 on the internet.
               </p>
-              <h4>Physical Connections</h4>
-                <p>
-                 The connections that connect computers include, copper cable(such as twisted-pair cable), fiber-optic cable(glass strand cable), and even wireless communications
-                  (radio frequency). In general, all connections are referred as a medium. Any computer on a network needs a medium to communicate with others and a carrier/Internet
-                  Service Provider (ISP) manages the traffic that flows through their infrastructure. This flow control is essential in ensuring that the network(s) are efficiently 
-                  implemented.
-                </p>
+             
               <h4>Packet Switching</h4>
                 <p>
                   Packet switching is the breakdown of larger pieces of data, which is then sent in pieces (packets) over the network to be reassembled on the receiving end. 
@@ -179,119 +194,32 @@
                 In a network, the packets sent and received have source, destination, and sequence (order of packet) to compile the information into a usable format. Larger pieces
                 of data, require more packets. This is derived from the ARPANET project before it became the internet.
               </p> 
-              <h4>routing</h4>
+              <h4>Routing</h4>
                 <p>
-                  Routing involves the communication of different networks through routers. All networks require a gateway IP address as this the identifier for how a user receives information
-                  on a global topology, and this is on the router being used on an individual's network. A person on a LAN at home, sends traffic out of their computeer, which is then passed through their router. 
-                  This is what connects them to the web. The internet 
+                  Routing involves the communication of different networks through routers. All networks require a gateway IP address as this is the identifier for how a user receives information
+                  on a global topology, and this is on the router being used on an individual's personal network. A person on a LAN at home, sends traffic out of their computeer, which is then passed through their router. 
+                  This is what connects them to the web. The internet consists of routers and packets ping to other routers in the most efficient path to reach it's destination. It's possible that the shortest path is 
+                  not the most efficient route for a packet to travel, and it is also possible the same path used to send information may not be the same path to receive information. 
                 </p>
-              <h4>Packet Switching</h4>
                 <p>
-                  Packet switching info
+                 Below is a diagram that gives a visual of how sending a file might look on a topology. 
                 </p>
-              </p>
+            <div class="card" style="width: 100%">
+            <img src="https://cdn.glitch.global/a0092f56-ae43-48a0-9e32-278c3e223e4e/Packet%20sending%20diagram.png?v=1742520072383"
+              alt="Diagram of Packet travelling through internet" 
+              style="width: 50%; margin: 0 auto; border: 4px solid black;"
+              >
             </div>
-          </div>
-        </div>
-        <br />
-      </div>
-    </div>
-  <div class="container">
+              <h4>
+                Additional Information
+            </h4>
+              <p>
+                MDN web docs has an article that further elaborates on how the internet works and how routing is implemented through this <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work">Link</a>
+              </p>
+        
       <div>
-        <div class="main">
-          <div class="card" style="width: 100%">
-            <div class="card-body">
-              <h3>Encryption</h3>
-              <p>
-                Data with no encryption is plaintext data. This data can be read by anyone who sees it.
-                Encryption is the “scrambling” or ciphering of data before transmission. In short, the 
-                data in a message goes through a calculated process (or algorithm) of turning the information 
-                to be sent into an unreadable format. The purpose of this is to protect the information that 
-                is being sent from being deciphered by an unauthorized third-party or a bad actor who may 
-                capture that information. Decryption is the process of deciphering an encrypted message 
-                using a key or set of steps in order to turn the unreadable content into comprehendible 
-                information (plaintext to the recipient). In a perfect scenario, the intended recipient is 
-                the only holder of the key.
-              </p>
-              <h5>Symmetric Encryption</h5>
-              <p>
-                Symmetric encryption implies that the encryption and decryption method is using the same 
-                key or steps to secure messages. The sender and the receiver would be using the same key. 
-              </p>
-              <h5>Asymmetric Encryption</h5>
-              <p>
-                Asymmetric encryption implies that the sender uses a public key to encrypt a transmission. 
-                The recipient uses a private key (different than the sender’s key) to decrypt the transmission 
-                that was sent. The sender’s key being different prevents them from decrypting the key that they 
-                sent. With the recipient being the only client that can decrypt the transmission, this makes it 
-                very difficult for anyone else to decipher the encryption. 
-              </p>
-              <h5>The Importance of Encryption</h5>
-              <p>
-                Compared to the internet that was derived from the ARPANET decades ago, the internet is now used to fulfill 
-                services that use personally identifiable information or financial information of millions, if not, 
-                billions of people around the world. With all of the exchange of this information, bad actors, hackers, 
-                and so on, want to access this information for illicit reasons. In order to prevent this, 
-                security measures need to be taken in how this traffic is sent across the web. 
-                Encrypting the information being sent to other devices is a measure that helps ensure that not 
-                anyone can intercept confidential information and make use of it in any meaningful way. This would 
-                be similar to intercepting an envelope from the mail to an important person but not being able to 
-                make sense of the message because it’s literally unreadable.
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-      </div>
     </div>
-  <div class="container">
-      <div>
-        <div class="main">
-          <div class="card" style="width: 100%">
-            <div class="card-body">
-              <h3>Encryption</h3>
-              <p>
-                Data with no encryption is plaintext data. This data can be read by anyone who sees it.
-                Encryption is the “scrambling” or ciphering of data before transmission. In short, the 
-                data in a message goes through a calculated process (or algorithm) of turning the information 
-                to be sent into an unreadable format. The purpose of this is to protect the information that 
-                is being sent from being deciphered by an unauthorized third-party or a bad actor who may 
-                capture that information. Decryption is the process of deciphering an encrypted message 
-                using a key or set of steps in order to turn the unreadable content into comprehendible 
-                information (plaintext to the recipient). In a perfect scenario, the intended recipient is 
-                the only holder of the key.
-              </p>
-              <h5>Symmetric Encryption</h5>
-              <p>
-                Symmetric encryption implies that the encryption and decryption method is using the same 
-                key or steps to secure messages. The sender and the receiver would be using the same key. 
-              </p>
-              <h5>Asymmetric Encryption</h5>
-              <p>
-                Asymmetric encryption implies that the sender uses a public key to encrypt a transmission. 
-                The recipient uses a private key (different than the sender’s key) to decrypt the transmission 
-                that was sent. The sender’s key being different prevents them from decrypting the key that they 
-                sent. With the recipient being the only client that can decrypt the transmission, this makes it 
-                very difficult for anyone else to decipher the encryption. 
-              </p>
-              <h5>The Importance of Encryption</h5>
-              <p>
-                Compared to the internet that was derived from the ARPANET decades ago, the internet is now used to fulfill 
-                services that use personally identifiable information or financial information of millions, if not, 
-                billions of people around the world. With all of the exchange of this information, bad actors, hackers, 
-                and so on, want to access this information for illicit reasons. In order to prevent this, 
-                security measures need to be taken in how this traffic is sent across the web. 
-                Encrypting the information being sent to other devices is a measure that helps ensure that not 
-                anyone can intercept confidential information and make use of it in any meaningful way. This would 
-                be similar to intercepting an envelope from the mail to an important person but not being able to 
-                make sense of the message because it’s literally unreadable.
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-      </div>
-    </div>
+  </div>
 
 </body>
 </html>
